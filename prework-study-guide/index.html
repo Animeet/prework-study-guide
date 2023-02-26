@@ -5,6 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <style>
+      ol {
+        padding-left: 30px;
+      }
+    </style>
     <title>Prework Study Guide</title>
   </head>
 
@@ -26,7 +32,9 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>A padding indicates how much space we want around the content inside an element.</li>
+          <li>You can assign color using Hex # or through the specified color name. Htmlcolorcodes.com </li>
         </ul>
       </section>
    
@@ -36,6 +44,23 @@
           <li>git status: Checks what branch we are currently on</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
           <li>git commit -m: allows the use of adding a short descriptive message with our commit</li>
+          <li>The process in creating a branch:</li>
+            <ol>
+              <li >cd bootcamp</li>
+              <li>cd prework-study-guide</li>
+              <li>git status (See if on main)</li>
+              <li>git checkout main (Switches to main branch if not currently on)</li>
+              <li>git checkout -b branch-name (Branch example: feature/add --- Name example: css) (branch-name: feature/add-css)</li>
+            </ol>
+          <li>The process for merging a branch back into the main:</li>
+            <ol>
+              <li>Make sure we are on the correct branch (example: Feature/add-css)</li>
+              <li>git add -A (Add the changed file in our working directory)</li>
+              <li>git commit -m "short descriptive note" (This steps commits to our repository)</li>
+              <li>git pull origin main (Make sure current branch is up to date before opening pull request)</li>
+              <li>git push origin branchname (example: git push origin feature/add-css)</li>
+              <li>follow the remaining steps on GitHub browser under pull requests tab (Make sure base=main and comparison=feature/add-css)</li>
+            </ol>
         </ul>
       </section>
    
