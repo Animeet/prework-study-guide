@@ -42,25 +42,28 @@
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>git status: Checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-          <li>git commit -m: allows the use of adding a short descriptive message with our commit</li>
-          <li>The process in creating a branch:</li>
+          <li>How to create a branch:</li>
             <ol>
-              <li >cd bootcamp</li>
-              <li>cd prework-study-guide</li>
+              <li>MAKE SURE YOU ARE IN THE RIGHT DIRECTORY</li>
+              <li>cd properdirectory</li>
               <li>git status (See if on main)</li>
               <li>git checkout main (Switches to main branch if not currently on)</li>
               <li>git checkout -b branch-name (Branch example: feature/add --- Name example: css) (branch-name: feature/add-css)</li>
             </ol>
-          <li>The process for merging a branch back into the main:</li>
+          <li>How to merge a branch back into the main:</li>
             <ol>
               <li>Make sure we are on the correct branch (example: Feature/add-css)</li>
-              <li>git add -A (Add the changed file in our working directory)</li>
-              <li>git commit -m "short descriptive note" (This steps commits to our repository)</li>
-              <li>git pull origin main (Make sure current branch is up to date before opening pull request)</li>
+              <li>git add -A </li>
+              <li>git commit -m "short descriptive note" </li>
+              <li>git pull origin main </li>
               <li>git push origin branchname (example: git push origin feature/add-css)</li>
               <li>follow the remaining steps on GitHub browser under pull requests tab (Make sure base=main and comparison=feature/add-css)</li>
+            </ol>
+          <li>Useful Commands</li>
+            <ol>
+              <li>'cd ..' allows you to go back a single directory</li>
+              <li>'cd../' can be combined with multiple ../ to go back further in the directory (cd../../../ = going back three times)</li>
+              <li>'mkdir' creates a new directory (not to get confused with creating a new branch)</li>
             </ol>
         </ul>
       </section>
